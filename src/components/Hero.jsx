@@ -1,17 +1,19 @@
 import React from 'react';
-import Spline from '@splinetool/react-spline';
 import { ArrowRight, BadgeCheck } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[90vh] overflow-hidden">
+    <section className="relative w-full min-h-[80vh] overflow-hidden">
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/D17NpA0ni2BTjUzp/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <img
+          src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2060&auto=format&fit=crop"
+          alt="Abstract genomics visualization"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black" />
       </div>
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black" />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 pt-28 pb-24 flex flex-col items-start justify-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 pt-20 pb-20 flex flex-col items-start justify-center">
         <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 backdrop-blur">
           <BadgeCheck className="h-4 w-4 text-emerald-400" />
           <span className="text-xs text-white/80">HIPAA-ready. SOC 2 in progress.</span>
@@ -23,7 +25,7 @@ export default function Hero() {
         </h1>
 
         <p className="mt-5 max-w-2xl text-base md:text-lg text-white/80">
-          We aggregate, clean, and reason over the world’s genomic knowledge — in real time. Our AI agent automates multi-step bioinformatics workflows: from data ingestion and variant annotation to report generation and audit logging.
+          Aggregate, clean, and reason over the world’s genomic knowledge in real time. Our AI agent automates multi-step workflows: from ingestion and variant annotation to ACMG-style assessment, report generation, and audit logging.
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
@@ -31,16 +33,16 @@ export default function Hero() {
             Request early access
             <ArrowRight className="h-4 w-4" />
           </a>
-          <a href="#how" className="inline-flex items-center justify-center gap-2 rounded-md border border-white/20 bg-white/5 px-5 py-3 text-white hover:bg-white/10 transition">
-            See how it works
+          <a href="#features" className="inline-flex items-center justify-center gap-2 rounded-md border border-white/20 bg-white/5 px-5 py-3 text-white hover:bg-white/10 transition">
+            Explore features
           </a>
         </div>
 
         <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6 text-xs text-white/70">
           <Stat label="Data sources" value=">120" />
-          <Stat label="Avg. time saved per case" value="7-10 hrs" />
-          <Stat label="Reproducible pipelines" value="Yes" />
+          <Stat label="Time saved per case" value="7–10 hrs" />
           <Stat label="Citations & provenance" value="Tracked" />
+          <Stat label="Reproducible pipelines" value="Yes" />
         </div>
       </div>
     </section>

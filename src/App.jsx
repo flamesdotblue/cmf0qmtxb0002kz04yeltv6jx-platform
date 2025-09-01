@@ -1,15 +1,15 @@
 import React from 'react';
+import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import Features from './components/Features';
-import HowItWorks from './components/HowItWorks';
 import TrustSection from './components/TrustSection';
 
 export default function App() {
   return (
     <div className="min-h-screen bg-black text-white font-inter">
+      <NavBar />
       <Hero />
       <Features />
-      <HowItWorks />
       <TrustSection />
 
       <footer className="border-t border-white/10 bg-black/60 backdrop-blur py-10">
@@ -19,9 +19,8 @@ export default function App() {
             <span className="text-sm text-white/70">© {new Date().getFullYear()} AlgoGenome, Inc. All rights reserved.</span>
           </div>
           <nav className="flex items-center gap-6 text-sm text-white/70">
-            <a href="#security" className="hover:text-white transition">Security</a>
             <a href="#features" className="hover:text-white transition">Features</a>
-            <a href="#how" className="hover:text-white transition">How it works</a>
+            <a href="#security" className="hover:text-white transition">Security</a>
             <a href="#contact" className="hover:text-white transition">Contact</a>
           </nav>
         </div>

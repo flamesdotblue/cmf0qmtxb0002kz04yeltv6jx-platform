@@ -30,7 +30,7 @@ const items = [
   {
     icon: Shield,
     title: 'Enterprise security',
-    desc: 'Encryption in transit and at rest, SSO/SAML, fine-grained RBAC, PHI-aware redaction, and least-privilege data access. HIPAA-ready.'
+    desc: 'Encryption in transit and at rest, SSO/SAML, fine-grained RBAC, PHI-aware redaction. HIPAA-ready.'
   }
 ];
 
